@@ -51,19 +51,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         num1 = getIntFromEditText(editText1);
         num2 = getIntFromEditText(editText2);
 
+        if(v.getId() == R.id.btn_add){
+            textView.setText("Answere = " + (num1 + num2));
+        }
+
+        if(v.getId() == R.id.btn_sub){
+            textView.setText("Answere = " + (num1 - num2));
+        }
+
+        if(v.getId() == R.id.btn_mul){
+            textView.setText("Answere = " + (num1 * num2));
+        }
+
+        if(v.getId() == R.id.btn_div){
+            textView.setText("Answere = " + ((float)num1 / (float)num2));
+        }
+        /*
         switch (v.getId()){
             case R.id.btn_add:
                 textView.setText("Answere = " + (num1 + num2));
                 break;
             case R.id.btn_sub:
-                textView.setText("Answere = " + (num1 - num2));
+
                 break;
             case R.id.btn_mul:
-                textView.setText("Answere = " + (num1 * num2));
+
                 break;
             case R.id.btn_div:
-                textView.setText("Answere = " + ((float)num1 / (float)num2));
+
                 break;
-        }
+        }*/
     }
 }
